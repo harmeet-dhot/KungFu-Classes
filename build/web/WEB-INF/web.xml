@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>delatten</servlet-name>
+        <servlet-class>delatten</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>addstudent</servlet-name>
+        <servlet-class>addstudent</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>delstudent</servlet-name>
+        <servlet-class>delstudent</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>delatten</servlet-name>
+        <url-pattern>/delatten</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>addstudent</servlet-name>
+        <url-pattern>/addstudent</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>delstudent</servlet-name>
+        <url-pattern>/delstudent</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
